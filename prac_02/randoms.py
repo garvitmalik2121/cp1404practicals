@@ -21,4 +21,7 @@ print(random.uniform(2.5, 5.5))  # line 3"""
 # What did you see on line 3?
 # What was the smallest number you could have seen, what was the largest?
 # I have seen Smallest number is 2.653325565344101 and the largest number is 5.387437042155433
-#
+import random
+
+random_number = random.randint(1, 100)
+print(random_number)
