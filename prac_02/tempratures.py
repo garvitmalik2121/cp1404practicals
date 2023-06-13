@@ -30,11 +30,9 @@ def main():
             fahrenheit = convert_into_fahrenheit(celsius)
             print(f"Result: {fahrenheit:.2f} F")
         elif choice == "F":
-
             fahrenheit = get_valid_temperature()
             celsius = convert_into_celsius(fahrenheit)
             print(f"Result: {celsius:.2f} C")
-
         else:
             print("Invalid option")
         print(MENU)
