@@ -30,3 +30,9 @@ in_file.close()
 
 
 # 4 Now write a fourth block of code that prints the total for all lines in numbers.txt or a file with any number of numbers.
+with open("numbers.txt", "r") as file:
+    total = 0
+    for line in file:
+        number = int(line.strip())
+        total += number
+print(total)
