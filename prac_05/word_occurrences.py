@@ -1,7 +1,5 @@
 """
 CP1404/CP5632 Practical
-Word Count
-
 Word Occurrences
 Estimate: 40 minutes
 Actual:  1 hour 30 minutes

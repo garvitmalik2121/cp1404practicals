@@ -1,3 +1,9 @@
+"""CP1404/CP5632 Practical
+emails
+Estimate: 40 minutes
+Actual:  30 minutes"""
+
+
 def main():
     email = input("Email: ")
     email_to_name = {}
