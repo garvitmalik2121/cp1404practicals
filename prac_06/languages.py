@@ -1,3 +1,6 @@
+"""CP1404/CP5632 Practical programming
+Estimated time 1 hour
+Actual time 50 min"""
 from programming_language import ProgrammingLanguage
 
 python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
