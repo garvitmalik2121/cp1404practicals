@@ -61,12 +61,31 @@ if save_changes == 'yes':
 
 
 def load_projects(file_name):
+    projects = []
+    try:
+        with open(file_name, 'r') as file:
+            file_name.readline()  # Skip the header line
+            for line in file:
+                name, start_date, priority, cost_estimate, completion_percentage = line.strip().split('\t')
+                project = Project(name, start_date, priority, cost_estimate, completion_percentage)
+                projects.append(project)
+    except FileNotFoundError:
+        print(f"Error: File '{file_name}' not found.")
+    return projects
 
 
 def display_menu():
+    print("\n- (L)oad projects",
+          "\n- (S)ave projects",
+          "\n- (D)isplay projects",
+          "\n- (F)ilter projects by date",
+          "\n- (A)dd new project",
+          "\n- (U)pdate project",
+          "\n- (Q)uit")
 
 
 def get_choice():
+    return input(">>> ").lower()
 
 
 def write_projects_to_file(FILE, projects):
