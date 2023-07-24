@@ -28,7 +28,7 @@ def main():
     print("Guitars :")
     for guitar in guitars:
         print(guitar)
-
+    print("")
 
 def read_guitars_from_file(file_name):
     """Read guitars from the given file and return a list of Guitar objects."""
@@ -46,6 +46,14 @@ def read_guitars_from_file(file_name):
     except ValueError:
         print(f"Error: Invalid data format in '{file_name}'.")
     return guitars
+def write_guitars_to_file(file_name, guitars):
+    """Write guitars to the given file."""
+    try:
+        with open(file_name, 'w') as file:
+            for guitar in guitars:
+                file.write(f"{guitar}\n")
+    except IOError:
+        print(f"Error: Unable to write to file '{file_name}'.")
 
 
 if __name__ == "__main__":
