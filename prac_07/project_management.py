@@ -2,11 +2,14 @@
 practical 1404 prac 7
 """
 import datetime
+
 FILE = "project.txt"
+
+
 class Project:
     "display information about project"""
-    def __int__(self, name, start_date, priority, cost_estimate, completion_percentage):
 
+    def __int__(self, name, start_date, priority, cost_estimate, completion_percentage):
         """Construct a Project object from the given values."""
         self.name = name
         self.start_date = datetime.datetime.strptime(start_date, "%d/%m/%Y").date()
@@ -22,3 +25,61 @@ class Project:
     def __lt__(self, other):
         """Define comparison for sorting based on priority."""
         return self.priority < other.priority
+
+
+def main():
+    projects = load_projects(FILE)
+    menu = display_menu
+    choice = get_choice
+    while choice != "q":
+        if choice == "l"
+            load_file_name = input("Enter the filename to load projects from: ")
+            projects = load_projects(load_file_name)
+        elif choice == "s":
+            save_file_name = input("Enter the filename to save projects to: ")
+            write_projects_to_file(save_file_name, projects)
+            print("Projects saved.")
+        elif choice == 'd':
+            display_projects(projects)
+        elif choice == 'f':
+            filter_projects_by_date(projects)
+        elif choice == 'a':
+            add_new_project(projects)
+        elif choice == 'u':
+            update_project(projects)
+        else:
+            "Invalid choice "
+        display_menu()
+        get_choice()
+
+
+save_changes = input("Do you want to save changes? (yes/no): ").lower()
+
+if save_changes == 'yes':
+    write_projects_to_file(FILE, projects)
+    print("Thank you for using custom-built project management software.")
+
+
+def load_projects(file_name):
+
+
+def display_menu():
+
+
+def get_choice():
+
+
+def write_projects_to_file(FILE, projects):
+    pass
+
+
+def display_projects(projects):
+
+
+def filter_projects_by_date(projects):
+
+
+def add_new_project(projects):
+
+
+def update_project(projects):
