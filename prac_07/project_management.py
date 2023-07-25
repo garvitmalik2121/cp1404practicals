@@ -135,7 +135,7 @@ def add_new_project(projects):
 
 
 def update_project(projects):
-    display_projects(projects)
+    print_projects(projects)
     try:
         project_choice = int(input("Project choice: "))
         if 0 <= project_choice < len(projects):
