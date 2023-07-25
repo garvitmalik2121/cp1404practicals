@@ -52,11 +52,8 @@ def main():
         display_menu()
         choice = get_choice()
 
-    save_changes = input("Do you want to save changes? (yes/no): ").lower()
-
-    if save_changes == 'yes':
-        write_projects_to_file(FILE, projects)
-        print("Thank you for using custom-built project management software.")
+    write_projects_to_file(FILE, projects)
+    print("Thank you for using custom-built project management software.")
 
 
 def load_projects(file_name):
