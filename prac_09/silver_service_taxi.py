@@ -1,6 +1,5 @@
 from taxi import Taxi
 
-
 class SilverServiceTaxi(Taxi):
     flagfall = 4.50
 
@@ -12,4 +11,4 @@ class SilverServiceTaxi(Taxi):
         return self.flagfall + super().get_fare()
 
     def __str__(self):
-        return f"{super().__str__()} plus flagfall of ${self.flagfall:.2f}"
+        return f"{super().__str__()}, plus flagfall of ${self.flagfall:.2f}"

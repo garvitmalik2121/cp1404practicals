@@ -8,6 +8,7 @@ from prac_09.car import Car
 class Taxi(Car):
     """Specialised version of a Car that includes fare costs."""
     price_per_km = 1.23
+
     def __init__(self, name, fuel):
         """Initialise a Taxi instance, based on parent class Car."""
         super().__init__(name, fuel)
@@ -19,7 +20,7 @@ class Taxi(Car):
 
     def get_fare(self):
         """Return the price for the taxi trip."""
-        fare = self.price_per_km*self.current_fare_distance
+        fare = self.price_per_km * self.current_fare_distance
         rounded_fare = round(fare, 1)
         return rounded_fare
 
