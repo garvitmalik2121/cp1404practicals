@@ -10,5 +10,5 @@ i want to change the practical approach should be done in practical class and if
 
 
 ### Code Review PRs
-1. https://github.com/Simranm20/cp1404practicals/pull/3
+1.https://github.com/Simranm20/cp1404practicals/pull/3
 2. https://github.com/Simranm20/cp1404practicals/pull/4
